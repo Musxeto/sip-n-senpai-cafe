@@ -1,0 +1,173 @@
+/* Main section styles */
+.main {
+    margin-top: 120px;
+    padding: 50px;
+    color: aliceblue;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(131, 77, 8, 0.3)),
+        url('https://wallpaperboat.com/wp-content/uploads/2021/04/12/74363/book-and-coffee-15.jpg');
+}
+
+.main h1 {
+    color: rgba(175, 115, 43);
+    font-size: 60px;
+}
+
+.main h2 {
+    color: rgba(175, 115, 43);
+    font-size: 40px;
+}
+
+.main p {
+    font-size: 22px;
+}
+
+/* Team section styles */
+.team {
+    color: aliceblue;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(131, 77, 8, 0.3)),
+        url('https://wallpaperaccess.com/full/1595988.jpg');
+}
+
+.team h2 {
+    color: rgba(175, 115, 43);
+    font-size: 50px;
+}
+
+.team-member {
+    margin-top: 20px;
+}
+
+.team-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 4px black;
+    border: 7px solid rgba(131, 77, 8, 0.3);
+    object-fit: cover;
+    object-position: 100%;
+    margin-left: 20px;
+}
+
+@keyframes bounce {
+    from, to {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+
+.team-img:hover {
+    width: 133px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+/* Responsive styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar .navbar-brand .brand-name {
+        font-size: 16px;
+    }
+
+    .navbar .navbar-toggler-icon i {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .main {
+        margin-top: 90px;
+        padding: 20px;
+    }
+
+    .main h1 {
+        font-size: 24px;
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    .team-member {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .team-img {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .team-img:hover{
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .team {
+        padding: 20px;
+    }
+
+    .team h2 {
+        font-size: 24px;
+    }
+
+    .team h3 {
+        font-size: 16px;
+    }
+    .team h4{
+        font-size: 12px;
+    }
+    .team p {
+        display: none;
+    }
+
+    .footer-card {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .footer-card p {
+        font-size: 12px;
+    }
+
+    .footer-card h5 {
+        font-size: 16px;
+    }
+
+
+    
+
+    .social-icons a {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+}

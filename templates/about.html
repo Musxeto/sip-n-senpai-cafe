@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'logo.png') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'menuCss.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'contactCss.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'aboutCss.css') }}" >
+    <title>Sip & Senpai</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="brand">
+            <img src="{{ url_for('static', filename = 'logo.png') }}" alt="logo" class="logo" />
+            <div class="details">
+              <p class="brand-name">Sip & Senpai</p>
+              <p class="slogan">Coffee with a Dash of Kawaii</p>
+            </div>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-chevron-down"></i></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link img-fluid" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link img-fluid" href="/menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link img-fluid active" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link img-fluid" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main section text-center">
+        
+            <h1>About Us</h1>
+            <p>Welcome to Sip & Senpai, where we blend the love for coffee with a touch of kawaii.
+            <h2>Our Story</h2>
+            <p>Founded in 2023, Sip & Senpai is a coffee shop like no other. We are passionate about delivering
+                exceptional coffee experiences that not only awan ykeour senses but also bring a smile to your face.
+                At Sip & Senpai, we believe that coffee is more than just a beverage; it's a form of art and a
+                celebration of life's little moments. Our team of baristas is dedicated to crafting the perfect cup of
+                coffee for each customer, ensuring that every sip is a delightful journey.
+                Our commitment to quality extends beyond our coffee beans. We take pride in our cozy and inviting
+                atmosphere, where you can relax, work, or catch up with friends. Our menu features a wide range of
+                coffee, tea, pastries, cakes, and cookies, all made with love and attention to detail.
+                Join us on this coffee adventure, and let us be your companion in savoring life's simple pleasures.</p>
+        
+    </div>
+    <div class="team section">
+        <center>
+            <h2>Meet Our Team</h2>
+        </center>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="https://i.pinimg.com/474x/f8/7d/19/f87d19ef09170234c70ed92cc7f491b8.jpg"
+                            class="team-img" alt="Team Member 1">
+                        <h3>Sanji</h3>
+                        <h4>Founder & Head Barista</h4>
+                        <p>Sanji is passionate about coffee and has over 10 years of experience in the industry. He's
+                            the mastermind behind our unique coffee blends and innovative brewing techniques.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="https://pbs.twimg.com/media/E1-pB_UVIAQMDhN.jpg" class="team-img team-img-1"
+                            alt="Team Member 2">
+                        <h3>Minato Namikaze</h3>
+                        <h4>Pastry Chef</h4>
+                        <p>Minato is our talented pastry chef who creates the delicious treats you enjoy with your
+                            coffee. His passion for baking shines through in every bite.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHg30oze5p3Q-6ZwdFOg4ZCkfYXe2R4rN9Q&usqp=CAU"
+                            class="team-img" alt="Team Member 3">
+                        <h3>Itachi Uchiha</h3>
+                        <h4>Barista</h4>
+                        <p>Itachi is our friendly barista who ensures that every cup of coffee is brewed to perfection.
+                            He's always ready with a warm smile to brighten your day.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="https://i.pinimg.com/1200x/d1/94/02/d194025f6221caef42fd905c26f8705a.jpg"
+                            class="team-img" alt="Team Member 4">
+                        <h3>Gon</h3>
+                        <h4>Marketing Manager</h4>
+                        <p>Gon is responsible for spreading the word about Sip & Senpai. He combines his marketing
+                            expertise with his love for coffee to create engaging campaigns.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="https://fictionhorizon.com/wp-content/uploads/2022/11/Ep361RukiaProfile.webp"
+                            class="team-img" alt="Team Member 5">
+                        <h3>Rukia Kuchki</h3>
+                        <h4>Head Roaster</h4>
+                        <p>Rukia oversees the roasting process, ensuring that our coffee beans are of the highest
+                            quality. His expertise guarantees a rich and flavorful cup of coffee every time.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="https://i.pinimg.com/736x/81/74/4f/81744f7ebfd9dc2e0dfbaf2cd468930d.jpg"
+                            class="team-img" alt="Team Member 6">
+                        <h3>Jotarou</h3>
+                        <h4>Customer Service Specialist</h4>
+                        <p>Jojo is dedicated to ensuring that every customer has a memorable experience. He's your
+                            go-to person for any inquiries or feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-card">
+              <h5>Contact Us</h5>
+              <p>Email: info@sipnsenpai.com</p>
+              <p>Phone: +911911911</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-card">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-card news" id="W">
+              <div class="card-body">
+                <h5>Our Location</h5>    
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=170&amp;height=100&amp;hl=en&amp;q=gloria jeans lahore&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Puzzle</a></div><style>.mapouter{position:relative;text-align:right;width:170px;height:100px;}.gmap_canvas {overflow:hidden;background:none!important;width:170px;height:100px;}.gmap_iframe {width:170px!important;height:100px!important;}</style></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footer-card">
+              <h5>Customer Reviews</h5>
+              <p>Read what our customers are saying about us.</p>
+              <button type="button" class="btn btn-custom" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">View Reviews</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navLinks = document.querySelector(".navbar-collapse");
+
+            navbarToggler.addEventListener("click", function () {
+                if (navLinks.style.display === "block") {
+                    navLinks.style.display = "none";
+                } else {
+                    navLinks.style.display = "block";
+                }
+            });
+
+            const subscriptionForm = document.getElementById("subscription-form");
+            const emailInput = document.getElementById("email11");
+            const successAlert = document.getElementById("success-alert");
+
+            /*subscriptionForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const email = emailInput.value;
+                if (validateEmail(email)) {
+                    successAlert.style.display = "block";
+                    emailInput.value = "";
+                } else {
+                    alert("Please enter a valid email address.");
+                }
+            });
+
+            function validateEmail(email) {
+                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return regex.test(email);
+            }*/
+        });
+    </script>
+</body>
+
+</html>

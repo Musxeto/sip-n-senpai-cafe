@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'logo.png') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'menuCss.css') }}" />
+    <title>Sip & Senpai</title>
+  </head>
+  <style>
+    /* Add this CSS to disable horizontal scrolling on mobile */
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="brand">
+            <img src="{{ url_for('static', filename = 'logo.png') }}" alt="logo" class="logo" />
+            <div class="details">
+              <p class="brand-name">Sip & Senpai</p>
+              <p class="slogan">Coffee with a Dash of Kawaii</p>
+            </div>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-chevron-down"></i></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link img-fluid" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link img-fluid active" href="/menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link img-fluid" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link img-fluid" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <img src="{{ url_for('static', filename = 'img/menu-bg.jpg') }}" alt="Image 1" class="bg-img" />
+      <div class="menu-text">OUR MENU</div>
+    </div>
+    <section class="menu">
+      <center>
+        <h2 id="coffee">Expresso</h2>
+      </center>
+      <table class="table Classic">
+        <thead>
+          <tr>
+            <th>
+              <h3>CLASSICS</h3>
+            </th>
+            <th class="text-right">Small</th>
+            <th class="text-right">Regular</th>
+            <th class="text-right">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="coffee-name">CAPPUCCINO / CAFFE LATTE</td>
+            <td class="text-right">210</td>
+            <td class="text-right">250</td>
+            <td class="text-right">320</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">CAFÉ AMERICANO</td>
+            <td class="text-right">300</td>
+            <td class="text-right">400</td>
+            <td class="text-right">500</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">ESPRESSO</td>
+            <td class="text-right">300</td>
+            <td class="text-right">420</td>
+            <td class="text-right">550</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">RISTRETTO</td>
+            <td class="text-right">380</td>
+            <td class="text-right">525</td>
+            <td class="text-right">620</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">MACCHIATO</td>
+            <td class="text-right">400</td>
+            <td class="text-right">560</td>
+            <td class="text-right">620</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">PICCOLO LATTE</td>
+            <td class="text-right">390</td>
+            <td class="text-right">560</td>
+            <td class="text-right">730</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table Specialities">
+        <thead>
+          <tr>
+            <th>
+              <h3>SPECIALITIES</h3>
+            </th>
+            <th class="text-right">Small</th>
+            <th class="text-right">Regular</th>
+            <th class="text-right">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="coffee-name">CAFFÉ MOCHA</td>
+            <td class="text-right">210</td>
+            <td class="text-right">250</td>
+            <td class="text-right">320</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">WHITE CHOCOLATE MOCHA</td>
+            <td class="text-right">300</td>
+            <td class="text-right">400</td>
+            <td class="text-right">500</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">CARAMELATTE</td>
+            <td class="text-right">300</td>
+            <td class="text-right">420</td>
+            <td class="text-right">550</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">VERY VANILLA LATTE</td>
+            <td class="text-right">380</td>
+            <td class="text-right">525</td>
+            <td class="text-right">620</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">IRISH NUT CRÈME</td>
+            <td class="text-right">400</td>
+            <td class="text-right">560</td>
+            <td class="text-right">620</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">MOCHA CARAMELATTE</td>
+            <td class="text-right">390</td>
+            <td class="text-right">560</td>
+            <td class="text-right">730</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">CHOCOLATE MACADAMIA LATTE</td>
+            <td class="text-right">390</td>
+            <td class="text-right">560</td>
+            <td class="text-right">730</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">CREME BRULEE LATTE</td>
+            <td class="text-right">390</td>
+            <td class="text-right">560</td>
+            <td class="text-right">730</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">MINICINO / BABYCINO</td>
+            <td class="text-right">390</td>
+            <td class="text-right">560</td>
+            <td class="text-right">730</td>
+          </tr>
+        </tbody>
+      </table>
+      <center>
+        <h2 id="tea">Tea</h2>
+      </center>
+      <table class="table Chai">
+        <thead>
+          <tr>
+            <th>
+              <h3>Classics</h3>
+            </th>
+            <th class="text-right">Small</th>
+            <th class="text-right">Regular</th>
+            <th class="text-right">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="coffee-name">KARAK CHAI</td>
+            <td class="text-right">210</td>
+            <td class="text-right">250</td>
+            <td class="text-right">320</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">DOODH PATTI</td>
+            <td class="text-right">300</td>
+            <td class="text-right">400</td>
+            <td class="text-right">500</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">HOT TEA</td>
+            <td class="text-right">300</td>
+            <td class="text-right">420</td>
+            <td class="text-right">550</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">GREEN TEA</td>
+            <td class="text-right">380</td>
+            <td class="text-right">525</td>
+            <td class="text-right">620</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">CHAI TEA LATTE</td>
+            <td class="text-right">400</td>
+            <td class="text-right">560</td>
+            <td class="text-right">620</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">ENGLISH BREAKFAST TEA</td>
+            <td class="text-right">390</td>
+            <td class="text-right">560</td>
+            <td class="text-right">730</td>
+          </tr>
+        </tbody>
+      </table>
+      <center>
+        <h2 id="hot-chocolate">Hot Chocolates</h2>
+      </center>
+      <table class="table hot-chocolate">
+        <thead>
+          <tr>
+            <th>
+              <h3>HOT CHOCOLATE</h3>
+            </th>
+            <th class="text-right">Small</th>
+            <th class="text-right">Regular</th>
+            <th class="text-right">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="coffee-name">CLASSIC HOT CHOCOLATE</td>
+            <td class="text-right">210</td>
+            <td class="text-right">250</td>
+            <td class="text-right">320</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">WHITE HOT CHOCOLATE</td>
+            <td class="text-right">300</td>
+            <td class="text-right">400</td>
+            <td class="text-right">500</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">GJC’S CREAMY HOT COCOA</td>
+            <td class="text-right">300</td>
+            <td class="text-right">420</td>
+            <td class="text-right">550</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table Extras">
+        <thead>
+          <tr>
+            <th>
+              <h3>EXTRAS</h3>
+            </th>
+            <th class="text-right">PRICE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="coffee-name">ESPRESSO SHOT</td>
+            <td class="text-right">250</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">FLAVOUR SYRUP</td>
+            <td class="text-right">250</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">WHIPPED CREAM</td>
+            <td class="text-right">250</td>
+          </tr>
+          <tr>
+            <td class="coffee-name">SKIM MILK / DECAFFEINATED COFFEE</td>
+            <td class="text-right">NO EXTRA CHARGE</td>
+          </tr>
+        </tbody>
+      </table>
+      <center>
+        <h2 id="pastry">Pastry</h2>
+      </center>
+      <table class="table Pastry">
+        <thead>
+          <tr>
+            <th>
+              <h3>PASTRY</h3>
+            </th>
+            <th class="text-right">Small</th>
+            <th class="text-right">Regular</th>
+            <th class="text-right">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="item-name">Chocolate Croissant</td>
+            <td class="text-right">150</td>
+            <td class="text-right">200</td>
+            <td class="text-right">250</td>
+          </tr>
+          <tr>
+            <td class="item-name">Blueberry Danish</td>
+            <td class="text-right">160</td>
+            <td class="text-right">210</td>
+            <td class="text-right">260</td>
+          </tr>
+          <tr>
+            <td class="item-name">Cinnamon Roll</td>
+            <td class="text-right">170</td>
+            <td class="text-right">220</td>
+            <td class="text-right">270</td>
+          </tr>
+          <tr>
+            <td class="item-name">Almond Croissant</td>
+            <td class="text-right">180</td>
+            <td class="text-right">230</td>
+            <td class="text-right">280</td>
+          </tr>
+          <tr>
+            <td class="item-name">Raspberry Danish</td>
+            <td class="text-right">170</td>
+            <td class="text-right">220</td>
+            <td class="text-right">270</td>
+          </tr>
+          <tr>
+            <td class="item-name">Strawberry Pastry</td>
+            <td class="text-right">190</td>
+            <td class="text-right">240</td>
+            <td class="text-right">290</td>
+          </tr>
+          <tr>
+            <td class="item-name">Apple Turnover</td>
+            <td class="text-right">160</td>
+            <td class="text-right">210</td>
+            <td class="text-right">260</td>
+          </tr>
+          <tr>
+            <td class="item-name">Pecan Danish</td>
+            <td class="text-right">180</td>
+            <td class="text-right">230</td>
+            <td class="text-right">280</td>
+          </tr>
+        </tbody>
+      </table>
+      <center>
+        <h2 id="cookies">Cookies</h2>
+      </center>
+      <table class="table Cookies">
+        <thead>
+          <tr>
+            <th>
+              <h3>COOKIES</h3>
+            </th>
+            <th class="text-right">Small</th>
+            <th class="text-right">Regular</th>
+            <th class="text-right">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="item-name">Chocolate Chip Cookies</td>
+            <td class="text-right">100</td>
+            <td class="text-right">150</td>
+            <td class="text-right">200</td>
+          </tr>
+          <tr>
+            <td class="item-name">Oatmeal Raisin Cookies</td>
+            <td class="text-right">110</td>
+            <td class="text-right">160</td>
+            <td class="text-right">210</td>
+          </tr>
+          <tr>
+            <td class="item-name">Peanut Butter Cookies</td>
+            <td class="text-right">120</td>
+            <td class="text-right">170</td>
+            <td class="text-right">220</td>
+          </tr>
+          <tr>
+            <td class="item-name">Double Chocolate Cookies</td>
+            <td class="text-right">130</td>
+            <td class="text-right">180</td>
+            <td class="text-right">230</td>
+          </tr>
+          <tr>
+            <td class="item-name">Snickerdoodle Cookies</td>
+            <td class="text-right">110</td>
+            <td class="text-right">160</td>
+            <td class="text-right">210</td>
+          </tr>
+          <tr>
+            <td class="item-name">White Chocolate Macadamia Cookies</td>
+            <td class="text-right">140</td>
+            <td class="text-right">190</td>
+            <td class="text-right">240</td>
+          </tr>
+          <tr>
+            <td class="item-name">Butter Pecan Cookies</td>
+            <td class="text-right">130</td>
+            <td class="text-right">180</td>
+            <td class="text-right">230</td>
+          </tr>
+          <tr>
+            <td class="item-name">M&M's Cookies</td>
+            <td class="text-right">120</td>
+            <td class="text-right">170</td>
+            <td class="text-right">220</td>
+          </tr>
+        </tbody>
+      </table>
+      <center>
+        <h2 id="cakes">Cakes</h2>
+      </center>
+      <table class="table Cakes">
+        <thead>
+          <tr>
+            <th>
+              <h3>CAKES</h3>
+            </th>
+            <th class="text-right">Small</th>
+            <th class="text-right">Regular</th>
+            <th class="text-right">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="item-name">Chocolate Cake</td>
+            <td class="text-right">250</td>
+            <td class="text-right">350</td>
+            <td class="text-right">450</td>
+          </tr>
+          <tr>
+            <td class="item-name">Strawberry Cheesecake</td>
+            <td class="text-right">280</td>
+            <td class="text-right">380</td>
+            <td class="text-right">480</td>
+          </tr>
+          <tr>
+            <td class="item-name">Red Velvet Cake</td>
+            <td class="text-right">270</td>
+            <td class="text-right">370</td>
+            <td class="text-right">470</td>
+          </tr>
+          <tr>
+            <td class="item-name">Red Velvet Cake</td>
+            <td class="text-right">270</td>
+            <td class="text-right">370</td>
+            <td class="text-right">470</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-card">
+              <h5>Contact Us</h5>
+              <p>Email: info@sipnsenpai.com</p>
+              <p>Phone: +911911911</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-card">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-card news" id="W">
+              <div class="card-body">
+                <h5>Our Location</h5>
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=170&amp;height=100&amp;hl=en&amp;q=gloria jeans lahore&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Puzzle</a>
+                  </div>
+                  <style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      width: 170px;
+                      height: 100px;
+                    }
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      width: 170px;
+                      height: 100px;
+                    }
+                    .gmap_iframe {
+                      width: 170px !important;
+                      height: 100px !important;
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footer-card">
+              <h5>Customer Reviews</h5>
+              <p>Read what our customers are saying about us.</p>
+              <button type="button" class="btn btn-custom" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">View Reviews</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="alert alert-info">
+            <ul>
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      <div class="container">
+        <div class="row">
+          <p class="text-center copyright">&copy; 2023 Sip & Senpai</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const navbarToggler = document.querySelector('.navbar-toggler')
+        const navLinks = document.querySelector('.navbar-collapse')
+      
+        navbarToggler.addEventListener('click', function () {
+          if (navLinks.style.display === 'block') {
+            navLinks.style.display = 'none'
+          } else {
+            navLinks.style.display = 'block'
+          }
+        })
+      
+        /* const subscriptionForm = document.getElementById('subscription-form')
+                                            const emailInput = document.getElementById('email11')
+                                            const successAlert = document.getElementById('success-alert')
+                                          
+                                            subscriptionForm.addEventListener('submit', function (e) {
+                                              e.preventDefault()
+                                              const email = emailInput.value
+                                              if (validateEmail(email)) {
+                                                successAlert.style.display = 'block'
+                                                emailInput.value = ''
+                                              } else {
+                                                alert('Please enter a valid email address.')
+                                              }
+                                            })
+                                          
+                                            function validateEmail(email) {
+                                              const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+                                              return regex.test(email)
+                                            } */
+      })
+    </script>
+  </body>
+</html>

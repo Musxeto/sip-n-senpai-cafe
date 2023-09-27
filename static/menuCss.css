@@ -1,0 +1,344 @@
+@import url('https://fonts.cdnfonts.com/css/weddingday-personal-use');
+
+.main {
+    margin-top: 130px;
+}
+
+.menu-wel {
+    position: static;
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-text {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: none;
+    }
+    .bg-img{
+        display: none;
+    }
+
+    .menu-text {
+        display: none;
+    }
+    .menu{
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 769px) {
+    .main {
+        margin: 0;
+    }
+
+    .main .menu-wel {
+        width: 100%;
+        max-width: none;
+    }
+
+    .menu-wel {
+        width: 100%;
+    }
+
+    .main img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.menu-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: rgb(255, 168, 62);
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    font-weight: 500;
+    animation: fademenu 1.5s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+    .menu-text {
+        font-size: 30px;
+        top: 24%;
+        color: rgb(255, 179, 87);
+    }
+}
+
+@keyframes fademenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu {
+    padding: 50px;
+    color: aliceblue;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(124, 70, 0, 0.2)),
+        url('https://wallpaperaccess.com/full/1595988.jpg');
+}
+
+.menu h2 {
+    font-size: 70px;
+    color: rgb(255, 168, 62);
+    margin-bottom: 70px;
+    transition: all 0.5s;
+}
+
+.menu h2:hover {
+    font-size: 80px;
+    color: rgb(223, 134, 25);
+    cursor: pointer;
+}
+
+.menu h3 {
+    font-size: 35px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th,
+.table td {
+    border: 0px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table {
+    color: white;
+    font-size: 20px;
+}
+
+.table th.text-right,
+.table td.text-right {
+    text-align: right;
+}
+
+.coffee-name {
+    font-size: 25px;
+}
+
+/* Responsive adjustments for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Main section styles */
+
+    .main {
+        max-width: 100%;
+        margin-top: 100px;
+    }
+
+    /* Welcome image */
+    .menu-wel {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Menu text styles */
+    .menu-text {
+        font-size: 10px;
+        top: 24%;
+        color: rgb(255, 179, 87);
+    }
+
+    /* Menu heading styles */
+    .menu h2 {
+        font-size: 60px;
+        color: rgb(255, 168, 62);
+        margin-bottom: 70px;
+        transition: all 0.5s;
+    }
+
+    /* Hover effect for menu heading */
+    .menu h2:hover {
+        font-size: 70px;
+        color: rgb(223, 134, 25);
+        cursor: pointer;
+    }
+
+    /* Subheading styles */
+    .menu h3 {
+        font-size: 30px;
+    }
+
+    /* Container styles for menu items */
+    .container {
+        margin-top: 20px;
+    }
+
+    /* Table styles for menu items */
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table th,
+    .table td {
+        border: 0px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Text color and font size for menu items */
+    .table {
+        color: white;
+        font-size: 18px;
+    }
+
+    .table th.text-right,
+    .table td.text-right {
+        text-align: right;
+    }
+
+    /* Coffee name styles */
+    .coffee-name {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(rgba(7, 4, 0, 0.3), rgba(16, 16, 16, 0.3)),
+            url('https://wallpaperaccess.com/full/1595988.jpg');
+        margin-left: -10px;
+    }
+
+    .hot-chocolate h2 {
+        font-size: 37px;
+        /* Adjusted font size for better readability */
+        color: rgb(255, 168, 62);
+        margin-bottom: 30px;
+        /* Reduced margin to improve spacing */
+        transition: all 0.5s;
+    }
+
+    .hot-chocolate h2:hover {
+        font-size: 42px;
+        /* Adjusted hover font size */
+        color: rgb(223, 134, 25);
+        cursor: pointer;
+    }
+
+    .hot-chocolate h3 {
+        font-size: 18px;
+        /* Adjusted font size for better readability */
+    }
+
+    /* Container styles for hot chocolate items */
+    .hot-chocolate .container {
+        margin-top: 20px;
+        max-width: 80%;
+        /* Ensure the container fits within the viewport */
+    }
+
+    /* Table styles for hot chocolate items */
+    .hot-chocolate .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .hot-chocolate .table th,
+    .hot-chocolate .table td {
+        border: 0px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Text color and font size for hot chocolate items */
+    .hot-chocolate .table {
+        color: white;
+        font-size: 18px;
+    }
+
+    .hot-chocolate .table th.text-right,
+    .hot-chocolate .table td.text-right {
+        text-align: right;
+    }
+
+    /* Hot chocolate name styles */
+    .hot-chocolate .hot-chocolate-name {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Specialities h2 {
+        font-size: 36px;
+        /* Adjusted font size for better readability */
+        color: rgb(255, 168, 62);
+        margin-bottom: 30px;
+        /* Reduced margin to improve spacing */
+        transition: all 0.5s;
+    }
+
+    .Specialities h2:hover {
+        font-size: 40px;
+        /* Adjusted hover font size */
+        color: rgb(223, 134, 25);
+        cursor: pointer;
+    }
+
+    .Specialities h3 {
+        font-size: 18px;
+        /* Adjusted font size for better readability */
+    }
+
+    /* Container styles for hot chocolate items */
+    .Specialities .container {
+        margin-top: 20px;
+        max-width: 80%;
+        /* Ensure the container fits within the viewport */
+    }
+
+    /* Table styles for hot chocolate items */
+    .Specialities .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .Specialities .table th,
+    .Specialities .table td {
+        border: 0px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Text color and font size for hot chocolate items */
+    .Specialities .table {
+        color: white;
+        font-size: 20px;
+    }
+
+    .Specialities .table th.text-right,
+    .Specialities .table td.text-right {
+        text-align: right;
+    }
+
+    /* Hot chocolate name styles */
+    .Specialities .coffee-name {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+}

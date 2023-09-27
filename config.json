@@ -1,0 +1,19 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/sipnsenpai",
+    "prod_uri":"mysql://root:@localhost/sipnsenpai",
+    "fb_url":"https://facebook.com/sipnsenpai",
+    "tw_url":"https://twitter.com/sipnsenpai",
+    "gh_url": "https://github.com/sipnsenpai",
+    "blog_name": "SIP & SENPAI",
+    "tag_line": "MOJ MASTI",
+    "gmail-user":"xetophergm@gmail.com",
+    "gmail-password":"ptex jjln szlg ucaj",
+    "admin_user": "Sin & Senpai",
+    "admin_password": ""
+  }
+}
+
+
