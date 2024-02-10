@@ -41,7 +41,7 @@ To get this project up and running on your local machine, follow these steps:
 
 ## Project Structure
 
-- `app.py`: The main Flask application script.
+- `main.py`: The main Flask application script.
 - `config.json`: Configuration file for the application.
 - `requirements.txt`: List of required Python packages.
 - `templates/`: HTML templates for the web pages.
